@@ -1,3 +1,14 @@
+# Bulk Pagespeed Insights:
+This project is a small project to see if I can continuously run pagespeed insights on a large number of pages. The idea is to run it on a large number of pages and then see if I can get a good overview of the results.
+
+currently looks like this:
+
+![image]()
+
+
+## Default readme:
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
