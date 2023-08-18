@@ -3,7 +3,7 @@ This project is a small project to see if I can continuously run pagespeed insig
 
 currently looks like this:
 
-![image]()
+![image](https://github.com/hellingsstefan/bulk-pagespeed-insight/blob/main/bulk-pagespeed-tester.png?raw=true)
 
 
 ## Default readme:
