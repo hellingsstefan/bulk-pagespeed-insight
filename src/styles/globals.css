@@ -1,0 +1,83 @@
+    :root {
+    --font-base: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+        'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+        'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+    --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+        'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+        'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 230, 230, 230;
+    --background-end-rgb: 255, 255, 255;
+
+    --base-padding: 3rem;
+
+    --primary-rgb: 0, 0, 0;
+    --secondary-rgb: 255, 255, 255;
+
+    --color-orange: #fa3;
+    --color-green: #0c6;
+    --color-red: #f33;
+
+    --color-bad: var(--color-red);
+    --color-average: var(--color-orange);
+    --color-good: var(--color-green);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --foreground-rgb: 255, 255, 255;
+        --background-start-rgb: 20, 10, 30;
+        --background-end-rgb: 0, 0, 0;
+
+        --primary-rgb: 255, 255, 255;
+        --secondary-rgb: 0, 0, 0;
+    }
+}
+
+html {
+    display: block;
+    margin: 0;
+    padding: 0;
+    font-size: 62.5%;
+    font-family: var(--font-family-base, 'sans-serif');
+    min-width: 280px;
+    overflow-x: hidden;
+
+    touch-action: manipulation;
+    scroll-behavior: smooth;
+
+    @media (prefers-color-scheme: dark) {
+        color-scheme: dark;
+    }
+}
+
+body {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    min-width: var(--min-width);
+    min-height: 100vh;
+    margin: 0 auto;
+    padding: 0;
+
+    font-size: 1.6rem;
+    font-weight: normal;
+    line-height: 1.5;
+    color: rgb(var(--foreground-rgb));
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent,
+            rgb(var(--background-end-rgb))
+        )
+        rgb(var(--background-start-rgb))
+    ;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

@@ -1,0 +1,43 @@
+.scoreblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    min-width: 7rem;
+
+    padding: .5rem;
+    border-radius: .3rem;
+    border: .1rem solid rgba(var(--primary-rgb), .25);
+}
+
+.title {
+    font-size: 1.1rem;
+}
+
+.score {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.title,
+.score {
+    &:empty {
+        display: none;
+    }
+}
+
+.good {
+    background: var(--color-good);
+    color: white;
+}
+
+.average {
+    background: var(--color-average);
+    color: white;
+}
+
+.bad {
+    background: var(--color-bad);
+    color: white;
+}

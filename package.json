@@ -15,5 +15,13 @@
     "next": "13.1.1",
     "react": "18.2.0",
     "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "lodash": "^4.17.21",
+    "postcss": "^8.4.20",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "postcss-nested": "^6.0.0",
+    "postcss-preset-env": "^7.8.3",
+    "swr": "^2.0.0"
   }
 }
